@@ -1,0 +1,116 @@
+/*(列表页)
+  获取列表页数据
+  GET(不区分大小写)
+  api/lists.php
+	返回：数据库列表页的数据
+*/
+
+/*(列表页)
+  价格排序
+  GET(不区分大小写)
+  api/price.php
+	传参：a=ASC(升序)/DESC(降序)(不区分大小写)
+	返回：排序完之后的数据
+*/
+
+/*(列表页)
+  人气排序
+  GET(不区分大小写)
+  api/sales.php
+	返回：排序完之后的数据
+*/
+
+/*(详情页)
+  获取网址id，查询数据库数据
+  GET(不区分大小写)
+  api/details.php
+	传参：date-id=date-id(自定义属性date-id的值)
+	返回：该id的所有数据
+*/
+
+/*(注册页)
+  用户名验证
+  GET(不区分大小写)
+  api/username.php
+	传参：name=username(注册页填的用户名)
+	返回：1(用户名已被注册)
+	      0(用户名可用)
+*/
+
+/*(注册页)
+  注册
+  POST(不区分大小写)
+  api/register.php
+	传参：name=username(注册页填的用户名)
+	      password=password(注册页填的密码)
+	返回：yes(注册成功)
+              no(注册失败)
+*/
+
+/*(登录页)
+  登录，验证账号和密码
+  POST(不区分大小写)
+  api/denglu.php
+	传参：username=username(登录页填的用户名)
+	      password=password(登录页填的密码)
+	返回：0(该用户存在，可以登录)
+	      1(该用户不存在，需先去注册)
+*/
+
+/*(购物车页)
+  删除购物车所有商品
+  GET(不区分大小写)
+  api/dele_all.php
+	返回：yes(删除成功)
+	      no(删除失败)
+*/
+
+/*(购物车页)
+  删除购物车当行
+  GET(不区分大小写)
+  api/dele_one.php
+	传参：id=id(商品的id)
+	返回：yes(删除成功)
+	      no(删除失败)
+*/
+
+/*(详情页)
+  将商品的id和数量添加到购物车里
+  GET(不区分大小写)
+  api/shopcar.php
+	传参：id=id(商品id)
+	      number=num(商品数量)
+	返回：$obj=array(
+			'id'=$row1   //商品id及其其他信息
+			'num'=$row2  //商品的购买数量
+			);
+*/
+
+/*(列表页)
+  生成商品列表
+  GET(不区分大小写)
+  api/liebiao.php
+	传参：page=page(当前页数)
+	      qty=qty(每页显示数量)
+	返回：数据库列表页第n页的数据
+*/
+
+/*(购物车页)
+  加减购物车指定商品的数量
+  GET(不区分大小写)
+  api/add.php
+	传参：id=id(商品id)
+	      qty=qty(商品当前的数量)
+	返回：yes(修改成功)
+	      no(修改失败)
+*/
+
+/*(购物车页)
+  修改指定商品的购买数量
+  GET(不区分大小写)
+  api/change.php
+	传参：id=id(商品id)
+	      num=num(修改后的购买数量)
+	返回：yes(修改成功)
+	      no(修改失败)
+*/

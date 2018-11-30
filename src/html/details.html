@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>依谷网详情页</title>
+        <link rel="stylesheet" type="text/css" href="../css/base(pc).css" />
+        <link rel="stylesheet" type="text/css" href="../css/details.css" />
+    </head>
+    <body>
+        <!-- top -->
+        <div class="top con">
+            <span class="wel">欢迎光临依谷网!</span>
+            <span>
+                <a href="javascript:;">收藏依谷网</a>
+            </span>
+            <span class="register_">登录</span>
+            <span class="login_">免费注册</span>
+            <span class="shoppingcar_">购物车</span>
+            <span>
+                <img src="../img/index/top_eweima.png" alt="" />
+            </span>
+            <span>关注依谷网</span>
+            <div class="wx"></div>
+            <div class="not_check"></div>
+        </div>
+
+        <!-- 微信banner -->
+        <div class="wxye"></div>
+
+        <!-- search -->
+        <div id="search">
+            <div class="search con">
+                <div class="sea_logo fl"></div>
+                <div class="sea_ fl">
+                    <input type="text" class="sea_sea" placeholder="&nbsp&nbsp樱桃番茄"/>
+                    <input type="button" class="sea_btn" value="搜索"/>
+                    <div class="sea_a">
+                        <li class="fl"><a href="javascript:;">梅州沙田</a></li>
+                        <li class="fl"><a href="javascript:;">信丰脐橙</a></li>
+                        <li class="fl"><a href="javascript:;">涌泉蜜桔</a></li>
+                        <li class="fl"><a href="javascript:;">糖心苹果</a></li>
+                        <li class="fl"><a href="javascript:;">大闸蟹</a></li>
+                        <li class="fl"><a href="javascript:;">大红袍</a></li>
+                        <li class="fl"><a href="javascript:;">牛扒</a></li>
+                        <li class="fl"><a href="javascript:;">酸奶</a></li>
+                        <li class="fl"><a href="javascript:;">烘焙原料</a></li>
+                    </div>
+                </div>
+                <div class="sea_shop fr"><!--购物车按钮-->
+                    <div></div>
+                    <div class="sea_num">0</div><!--购物车里商品的数量-->
+                    <div>
+                        <span>立即去结算</span>
+                        <img src="../img/index/sea_xia.png" alt="" />
+                        <img src="../img/index/sea_xia.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="sea_car"><!--购物车下拉栏-->
+                <div>最新加入的商品</div>
+                <div class="small_car"><!--显示加入购物车的商品-->
+                    <img class="sea_che" src="../img/index/sea_car" alt="" />
+                    <!-- 模板 -->
+                    <!-- <div class="moban">
+                        <img src="../img/details/det_s1.jpg" alt="" />
+                        <a href="javascript:;">美国进口红提子4kg</a>
+                        <span>￥163.00</span>
+                        <span>x</span>
+                        <span>1</span>
+                        <a class="delete" href="javascript:;">删除</a>
+                    </div> -->
+                </div>
+                <div class="sea_null">你的购物车空空的，赶紧选购吧！</div>
+                <div>
+                    <span>
+                        共<span class="sea_say">0</span>&nbsp&nbsp&nbsp&nbsp件商品&nbsp&nbsp&nbsp&nbsp&nbsp共计
+                        <strong class="sea_say2">￥0.00</strong>
+                    </span>
+                    <div class="sea_go">去结算</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--下拉菜单-->
+        <div class="lists con">
+            <li class="yiji">全部商品分类</li>
+            <li>首页</li>
+            <li>礼品卡券</li>
+            <li>安心宅配</li>
+            <li>产地特色预订</li>
+            <li>企业定制</li>
+            <li>活动专区</li>
+            <li>食尚资讯</li>
+            <li>依谷扶贫</li>
+            <div class="erji"><!--二级菜单-->
+                <li>
+                    <img src="../img/index/lis_menu_1.png" alt="" />
+                    水果蔬菜
+                    <div class="three"><!--三级菜单-->
+                        <div>
+                            <a href="html/lists.html">国产水果</a>
+                            <span>苹果</span>
+                            <span>梨</span>
+                            <span>柑橙柚</span>
+                            <span>瓜类</span>
+                            <span>热带水果</span>
+                            <span>富含维C</span>
+                            <span>其他</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">进口水果</a>
+                            <span>美国</span>
+                            <span>利智</span>
+                            <span>新西兰</span>
+                            <span>澳大利亚</span>
+                            <span>泰国</span>
+                            <span>越南</span>
+                            <span>其他</span>
+                        </div>
+                        <div style="margin-bottom:20px">
+                            <a href="html/lists.html">新鲜蔬菜</a>
+                            <span>叶菜</span>
+                            <span>根茎/瓜类</span>
+                            <span>菌菇类</span>
+                            <span>茄果/豆类</span>
+                            <span>特色蔬菜</span>
+                            <span>豆制品</span>
+                            <span>其他蔬菜</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/index/lis_menu_2.png" alt="" />
+                    肉禽蛋奶
+                    <div class="three">
+                        <div>
+                            <a href="html/lists.html">无肉不欢</a>
+                            <span>进口肉类</span>
+                            <span>牛肉</span>
+                            <span>羊肉</span>
+                            <span>猪肉</span>
+                            <span>家禽</span>
+                            <span>其他</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">水产海鲜</a>
+                            <span>虾兵蟹将</span>
+                            <span>鲍参翅肚</span>
+                            <span>淡鱼海鱼</span>
+                            <span>珍品贝类</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">新鲜蛋品</a>
+                            <span>生态养殖蛋</span>
+                            <span>蛋制品</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">方便速食</a>
+                            <span>速食品</span>
+                            <span>手工面点</span>
+                            <span>丸子</span>
+                            <span>豆制品</span>
+                        </div>
+                        <div style="margin-bottom:20px">
+                            <a href="html/lists.html">牛奶乳品</a>
+                            <span>有机奶</span>
+                            <span>纯牛奶</span>
+                            <span>酸奶</span>
+                            <span>奶制品</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/index/lis_menu_3.png" alt="" />
+                    粮油副食
+                    <div class="three">
+                        <div>
+                            <a href="html/lists.html">干货特产</a>
+                            <span>臻品干货</span>
+                            <span>山珍海味</span>
+                            <span>腌腊食品</span>
+                            <span>其他特产</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">米面杂粮</a>
+                            <span>五常稻花香</span>
+                            <span>大米</span>
+                            <span>五谷杂粮</span>
+                            <span>面/粉/及制品</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">健康食油</a>
+                            <span>花生油</span>
+                            <span>玉米油</span>
+                            <span>橄榄油</span>
+                            <span>山茶油</span>
+                            <span>调和油</span>
+                            <span>更多油类</span>
+                        </div>
+                        <div style="margin-bottom:20px">
+                            <a href="html/lists.html">五味生香</a>
+                            <span>调味品</span>
+                            <span>汤底/底料</span>
+                            <span>果酱</span>
+                            <span>沙拉酱</span>
+                            <span>辣椒酱</span>
+                            <span>其他酱料</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/index/lis_menu_4.png" alt="" />
+                    零食酒饮
+                    <div class="three">
+                        <div>
+                            <a href="html/lists.html">吃货精选</a>
+                            <span>进口零食</span>
+                            <span>坚果炒货</span>
+                            <span>果干蜜饯</span>
+                            <span>糕点饼干</span>
+                            <span>糖果巧克力</span>
+                            <span>膨化食品</span>
+                            <span>飘香肉脯</span>
+                            <span>海苔</span>
+                            <span>其他</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">冲调饮料</a>
+                            <span>咖啡</span>
+                            <span>冲调品</span>
+                            <span>饮料</span>
+                            <span>蜂蜜</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">茶香四溢</a>
+                            <span>大红袍</span>
+                            <span>普洱</span>
+                            <span>黑茶</span>
+                            <span>铁观音</span>
+                            <span>乌龙茶</span>
+                            <span>红茶</span>
+                            <span>绿茶</span>
+                        </div>
+                        <div style="margin-bottom:20px">
+                            <a href="html/lists.html">美酒佳酿</a>
+                            <span>红酒</span>
+                            <span>啤酒</span>
+                            <span>洋酒</span>
+                            <span>白酒</span>
+                            <span>其他酒品</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/index/lis_menu_5.png" alt="" />
+                    主题场景
+                    <div class="three">
+                        <div>
+                            <a href="html/lists.html">心动时刻</a>
+                            <span>鲜花</span>
+                            <span>蛋糕</span>
+                            <span>巧克力</span>
+                            <span>红酒</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">新派料理</a>
+                            <span>慢享烘焙</span>
+                            <span>健身减脂</span>
+                            <span>异国风味</span>
+                            <span>中华烹饪</span>
+                        </div>
+                        <div>
+                            <a href="html/lists.html">年节惊喜</a>
+                            <span>恭贺新禧</span>
+                            <span>真情邂逅</span>
+                            <span>端午安康</span>
+                            <span>花好月圆</span>
+                        </div>
+                        <div style="margin-bottom:20px">
+                            <a href="html/lists.html">家常宴客</a>
+                            <span>省心家宴</span>
+                            <span>烛光晚餐</span>
+                            <span>生日派对</span>
+                            <span>香辣火锅</span>
+                            <span>热情烧烤</span>
+                            <span>小菜一碟</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/index/lis_menu_6.png" alt="" />
+                    这箱有礼
+                    <div class="three">
+                        <div>
+                            <a href="html/lists.html">走亲访友</a>
+                            <span>父母长辈</span>
+                            <span>同事好友</span>
+                            <span>情侣夫妻</span>
+                            <span>儿女小辈</span>
+                        </div>
+                        <div style="margin-bottom:100px">
+                            <a href="html/lists.html">情礼兼到</a>
+                            <span>拜年必备</span>
+                            <span>滋补养生</span>
+                            <span>粮油干货</span>
+                            <span>水果休闲</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/index/lis_menu_7.png" alt="" />
+                    生活用品
+                    <div class="three">
+                        <div>
+                            <a href="html/lists.html">家居用品</a>
+                            <span>洗漱用品</span>
+                            <span>家居小电器</span>
+                            <span>床上用品</span>
+                            <span>其他用品</span>
+                        </div>
+                        <div style="margin-bottom:100px">
+                            <a href="html/lists.html">厨房用品</a>
+                            <span>烹饪锅具</span>
+                            <span>餐具杯具</span>
+                            <span>厨房小电器</span>
+                            <span>厨房配件</span>
+                            <span>其他用品</span>
+                        </div>
+                    </div>
+                </li>
+                <img class="lis_shouqi" src="../img/index/lis_menu_shouqi.png" alt="" /><!--收起二级菜单按钮-->
+            </div>
+        </div>
+
+        <!-- 详情页内容 -->
+        <div class="details con">
+            <div>
+                <span>新鲜水果</span> > 
+                <span>水果</span> > 
+                <span>进口水果</span> > 
+                <span>进口软果类</span> > 
+                <span class="det_name"></span><!-- 根据id去数据库找name -->
+            </div>
+            <div class="det_picb"><!-- 大图片 -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <span class="fdj"></span><!-- 大图片里的放大镜 -->
+            </div>
+            <div class="det_plus"><!-- 放大镜 -->
+                <img class="det_img" src="../img/details/det_s1.jpg" alt="" />
+                <!-- <div></div>
+                <div></div>
+                <div></div>
+                <div></div> -->
+            </div>
+            <div class="det_name"></div><!-- 根据id去数据库找name -->
+            <div class="det_small"><!-- 小图片 -->
+                <div class="det_pics"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li>市场价：
+                    <del>￥186.00</del>
+                </li>
+                <li>商场价：
+                    <b>￥
+                        <i class="det_price">163.00</i>
+                    </b>
+                </li>
+            </ul>
+            <div>
+                <em>月销量
+                    <em class="det_sales">494</em>
+                    <em>|</em>
+                </em>
+            </div>
+            <div>
+                <li>
+                    <b>配送</b>
+                    &nbsp&nbsp16:00 前完成订单,预计明日(<em>11-28</em>)送达,生鲜商品仅限深圳!
+                </li>
+                <li>
+                    <b>运费</b>
+                    &nbsp&nbsp深圳市内每单物流费8元起，满199元免物流!
+                </li>
+                <li>
+                    <b>提示</b>
+                    &nbsp&nbsp产品图片及描述内容仅做参考,请您以收到的商品实物为准！谢谢
+                </li>
+            </div>
+            <div>
+                <li>
+                    <b>配送范围</b>&nbsp&nbsp广东深圳市
+                </li>
+            </div>
+            <div>
+                <div class="fl">规格：</div>
+                <div class="fl">4kg</div>
+            </div>
+            <div>
+                <div class="fl">数量：</div>
+                <!-- 数量框 -->
+                <input class="fl det_num" type="text" value="1"/>
+                <em class="fl" >
+                    <!-- 数量+1 -->
+                    <em class="det_add" style="margin-bottom:5px">+</em>
+                    <!-- 数量-1 -->
+                    <em class="det_reduce">-</em>
+                </em>
+                <img class="fl" src="../img/details/det_share.png" alt="" />
+                <a class="fl" href="javascript:;">分享</a>
+                <img class="fl" src="../img/details/det_xia.png" alt="" />
+                <img class="fl" src="../img/details/det_collet" alt="" />
+                <a class="fl" href="javascript:;">收藏</a>
+            </div>
+            <div>
+                <input class="fl buynow" type="botton" value="立即购买"/>
+                <div class="fl">
+                    <input class="addcar" type="botton" value="加入购物车"/>
+                    <img src="../img/details/det_car.png" height="15" width="20" alt="" />
+                    <!-- 飞行物 -->
+                    <img id="sid_fly" src="../img/lists/1.jpg" alt="" />
+                </div>   
+            </div>
+            <div>------
+                <b>热卖推荐</b>------
+            </div>
+            <div>
+                <li>
+                    <img src="../img/details/det_c1.jpg" alt="" />
+                    <a href="javascript:;">￥129.80</a>
+                </li>
+                <li>
+                    <img src="../img/details/det_c2.jpg" alt="" />
+                    <a href="javascript:;">￥89.90</a>
+                </li>
+                <li>
+                    <img src="../img/details/det_c3.jpg" alt="" />
+                    <a href="javascript:;">￥75.80</a>
+                </li>
+            </div>
+            <div class='fl'>
+                <div>
+                    <div>相关分类</div>
+                    <div>
+                        <li>新鲜水果</li>
+                        <li>水果</li>
+                        <li>进口水果</li>
+                        <li>进口软果类</li>
+                    </div>
+                </div>
+                <div>
+                    <b>浏览此商品的顾客还买了</b>
+                    <div>
+                        <img src="../img/details/det_l1.jpg" alt="" />
+                        <a href="javascript:;">山东蜜鋭秋月梨4kg</a>
+                        <b>￥88.00</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l2.jpg" alt="" />
+                        <a href="javascript:;">澳洲进口柑2kg</a>
+                        <b>￥78.00</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l3.jpg" alt="" />
+                        <a href="javascript:;">越南进口火龙果3个装（小果）</a>
+                        <b>￥19.80</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l4.jpg" alt="" />
+                        <a href="javascript:;">德庆皇帝柑2kg</a>
+                        <b>￥41.80</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l5.jpg" alt="" />
+                        <a href="javascript:;">广西金桔2.25kg</a>
+                        <b>￥44.80</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l6.jpg" alt="" />
+                        <a href="javascript:;">信丰安西脐橙5kg</a>
+                        <b>￥88.00</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l7.jpg" alt="" />
+                        <a href="javascript:;">浙江涌泉蜜桔2.5kg</a>
+                        <b>￥68.00</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l8.jpg" alt="" />
+                        <a href="javascript:;">台湾牛奶青枣1kg</a>
+                        <b>￥19.80</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l9.jpg" alt="" />
+                        <a href="javascript:;">台湾牛奶青枣2.5kg</a>
+                        <b>￥44.80</b>
+                    </div>
+                    <div>
+                        <img src="../img/details/det_l10.jpg" alt="" />
+                        <a href="javascript:;">台湾红文旦柚(2个装)</a>
+                        <b>￥29.80</b>
+                    </div>
+                </div>
+            </div>
+            <div class='fr'>
+                <div class="det_change4">
+                    <li class="det_color">商品介绍</li>
+                    <li>售后服务</li>
+                    <li>评价</li>
+                </div>
+                <!-- 第一块 -->
+                <div class="det_change">
+                    <div class="det_dd">
+                        <dd><span>保质期：</span>7</dd>
+                        <dd><span>储存条件：</span>冷藏</dd>
+                        <dd><span>毛 重：</span>4kg</dd>
+                        <dd><span>销售单位：</span>件</dd>
+                        <dd><span>产 地：</span>美国</dd>
+                        <dd><span>规 格：</span>4kg</dd>
+                    </div>
+                    <div>详细信息</div>
+                    <img src="../img/details/det_m1.jpg" alt="" />
+                    <img src="../img/details/det_m2.jpg" alt="" />
+                    <img src="../img/details/det_m3.jpg" alt="" />
+                    <img src="../img/details/det_m4.jpg" alt="" />
+                    <img src="../img/details/det_m5.jpg" alt="" />
+                    <img src="../img/details/det_m6.jpg" alt="" />
+                    <img src="../img/details/det_m7.jpg" alt="" />
+                    <img src="../img/details/det_m8.jpg" alt="" />
+                    <div class="sorry">产品图片及描述内容仅做参考,请您以收到的商品实物为准,由此给您带来的不便敬请谅解,谢谢！</div>
+                </div>
+                <!-- 第二块 -->
+                <div class="det_change2">
+                    <div>
+                        <img src="../img/details/deta1.png" alt="" />
+                        <b>安全食品</b>
+                        <span>官方实名认证</span>
+                    </div>
+                    <div>
+                        <img src="../img/details/deta2.png" alt="" />
+                        <b>基地直供</b>
+                        <span>食材最短供应链</span>
+                    </div>
+                    <div>
+                        <img src="../img/details/deta3.png" alt="" />
+                        <b>全程冷链</b>
+                        <span>食材新鲜不流失</span>
+                    </div>
+                    <div>
+                        <img src="../img/details/deta4.png" alt="" />
+                        <b>双重检测</b>
+                        <span>确保食材安全</span>
+                    </div>
+                    <div>
+                        <img src="../img/details/deta5.png" alt="" />
+                        <b>五星服务</b>
+                        <span>购物更省心省事</span>
+                    </div>
+                    <div>
+                        <b>商品退换货</b>
+                        <p>1、客户在收到商品后可享受“7日内无理由退货”，已标示不允许退货和鲜活易腐商品除外。</p>
+                        <p>2、因产品质量问题发生退换货时，所换商品将在约定的时间重新配送，免收物流费。</p>
+                        <p>3、因客户保存不善造成的商品损坏，我们将不予退换。</p>
+                        <p>4、如商品存在质量问题，请保留质量物品原物，依谷验货人员将在接到投诉后12小时内上门验货。您也可以登陆依谷网在会员管理处向依谷客服人员投诉，并上传质量问题图片。</p>
+                        <p>5、客户在收到商品（仅限干货类商品）48小时之内如需换货，请与依谷网客服联系，我们将在接收您的退换货请求24小时内处理，此类退换只限于没有被使用，且不损坏包装、不影响二次销售的商品，退换货所发生的路费/运费将由客户承担。</p>
+                        <p>6、水果类商品不能以外观瑕疵、个人口感为由提出退换，如因其它品质问题退货，则需提出退货理由并填写商品拒收单给送货员，所退货品交由送货员带回。您或您的委托收货人的签字表示您对商品质量及数量无异议，依谷网有权不接受以此为由的退换货。</p>
+                        <p>7、网上产品销售图片及信息仅供参照，因拍摄灯光及不同显示器色差等问题可能造成商品图片与实物有一定色差，一切以实物为准。 依谷网不接受以此为由的退换货。</p>
+                        <p>8、发生退货后，请联系我们的客服，经客服工作人员核实后会为您办理退款。我们会将货款24小时内退至您的依谷网个人帐户中，以便于下次订购时使用；对于网银支付或使用支付宝支付的客户如需将款项退至原支付账户，将在申请退款后7日内到账。</p>
+                        <p>以上规则最终解释权由依谷网所有。</p>
+                    </div>
+                </div>
+                <!-- 第三块 -->
+                <div class="det_change3">
+                    <div class="fl">
+                        <div>与描述相符</div>
+                        <span>4.9</span>
+                        <img src="../img/details/deta_star.png" alt="" />
+                    </div>
+                    <div class="fl">
+                        <b>新鲜</b>
+                        <b>值得购买</b>
+                        <b>口感不错</b>
+                        <b>划算</b>
+                        <b>物流快</b>
+                        <b>包装挺好</b>
+                        <b>很好吃</b>
+                        <b>服务态度好</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 配送 -->
+        <div id="dispatching">
+            <div class="dispatching con">
+                <li style="margin-left:4px">
+                    <img src="../img/index/dis_one.png" alt="" />
+                    <div>次日到达</div>
+                    <p>当天16点前下单第二天送达</p>
+                </li>
+                <li>
+                    <img src="../img/index/dis_two.png" alt="" />
+                    <div>货到付款</div>
+                    <p>货到网银多种支付方式</p>
+                </li>
+                <li>
+                    <img src="../img/index/dis_three.png" alt="" />
+                    <div>冷链配送</div>
+                    <p>基地到餐桌全程冷链</p>
+                </li>
+                <li>
+                    <img src="../img/index/dis_four.png" alt="" />
+                    <div>24小时退换货</div>
+                    <p>专业解答 为您解惑</p>
+                </li>
+                <li>
+                    <img src="../img/index/dis_five.png" alt="" />
+                    <div>基地优选食材</div>
+                    <p>依谷更懂您的需求</p>
+                </li>
+            </div>
+        </div>
+
+        <!-- 依谷有话说 -->
+        <div class="told con">
+            <div class="fl">
+                <div>依谷有话说：</div>
+                <img src="../img/index/told_.jpg" alt="" />
+                <li>
+                    <span>关于客户热线4001100755恢复正常的通知</span>
+                    <p>尊敬的依谷网客户：您好，4001100755客服电话及在线客服现已恢复正常。感谢您一直以来对依谷网的支持与鼓...</p>
+                </li>
+                <li>
+                    <span>关于客户热线4001100755暂停服务的通知</span>
+                    <p>尊敬的依谷网客户：您好，由于系统升级，4001100755客服电话及在线客服将暂时无法正常使用。如有不便还请...</p>
+                </li>
+                <li>
+                    <span>国庆期间物流配送公告</span>
+                    <p>尊敬的客户：您好！值此国庆佳节来临之际，依谷网在此感谢您长期以来对我们的信任与支持！为了不影响您的正...</p>
+                </li>
+            </div>
+            <div class="fr">
+                <li>
+                    <img src="../img/index/told_one.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="../img/index/told_two.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="../img/index/told_three.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="../img/index/told_four.jpg" alt="" />
+                </li>
+            </div>
+        </div>
+
+        <!-- link -->
+        <div class="link con">
+            <div class="fl">
+                <ul class="fl">购物指南
+                    <li>会员注册</li>
+                    <li>套餐卡使用方法</li>
+                    <li>谷穗卡使用方法</li>
+                    <li>积分兑换</li>
+                </ul>
+                <ul class="fl">付款方式
+                    <li>线上支付</li>
+                    <li>发票说明</li>
+                    <li>货到付款</li>
+                    <li>余额支付</li>
+                </ul>
+                <ul class="fl">商品配送
+                    <li>买家自取</li>
+                    <li>配送时间</li>
+                    <li>冷链配送</li>
+                    <li>送货范围及费用</li>
+                </ul>
+                <ul class="fl">售后服务
+                    <li>签收与评价</li>
+                    <li>常见问题</li>
+                    <li>退换货说明</li>
+                    <li>品质保障</li>
+                </ul>
+            </div>
+            <div class="fr">
+                <li class="fl">
+                    <p>依谷微信</p>
+                    <img src="../img/index/link_one.jpg" alt="" />
+                </li>
+                <li class="fl">
+                    <p>依谷网APP</p>
+                    <img src="../img/index/link_two.jpg" alt="" />
+                </li>
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom con">
+            <li style="margin-left:220px"><a href="javascript:;">关于依谷</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">加入依谷</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">联系依谷</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">免责声明</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">友情链接</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">依谷资讯</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">网站地图</a>&nbsp&nbsp|</li>
+            <li><a href="javascript:;">客服在线</a></li>
+            <div class="bot_">
+                <img style="margin-left:145px"src="../img/index/bot_one.png" alt="" />
+                <img src="../img/index/bot_two.jpg" alt="" />
+                <img src="../img/index/bot_three.jpg" alt="" />
+                <img src="../img/index/bot_four.gif" alt="" />
+                <img src="../img/index/bot_five.jpg" alt="" />
+                <img src="../img/index/bot_six.jpg" alt="" />
+                <img src="../img/index/bot_seven.png" alt="" />
+            </div>
+            <div class="say">
+                <p>Copyright © 2010-2018 所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p>
+                    <a href="javascript:;">粤ICP备11016505号-9</a>
+                     | All Rights Reserved 深圳依谷网版权所有 网络实名：
+                    <a href="../index.html">依谷网</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <li class="sid_one">
+                <img src="../img/index/sid_one.png" alt="" />
+                <img src="../img/index/sid_two.png" alt="" />
+                <div class="jump">个人中心
+                    <img class="black" src="../img/index/sid_black.png" alt="" />
+                </div>
+            </li>
+            <li class="sid_two">
+                <img src="../img/index/sid_three.png" alt="" />
+                <img src="../img/index/sid_four.png" alt="" />
+                <div>购物车</div>
+                <span class="sid_num">0</span><!--购物车里商品的数量-->
+            </li>
+            <li class="sid_three">
+                <img src="../img/index/sid_five.png" alt="" />
+                <img src="../img/index/sid_six.png" alt="" />
+                <div class="jump">我的足迹
+                    <img class="black" src="../img/index/sid_black.png" alt="" />
+                </div>
+            </li>
+            <li class="sid_four">
+                <img src="../img/index/sid_seven.png" alt="" />
+                <img src="../img/index/sid_eight.png" alt="" />
+                <div class="jump">我的收藏
+                    <img class="black" src="../img/index/sid_black.png" alt="" />
+                </div>
+            </li>
+            <div>
+                <li class="sid_five">
+                    <img src="../img/index/sid_nine.png" alt="" />
+                    <img src="../img/index/sid_ten.png" alt="" />
+                    <div class="jump">在线客服
+                        <img class="black" src="../img/index/sid_black.png" alt="" />
+                    </div>
+                </li>
+                <li class="sid_six">
+                    <img src="../img/index/sid_eleven.png" alt="" />
+                    <img src="../img/index/sid_twelve.png" alt="" />
+                    <div class="jump">客服热线
+                        <img class="black" src="../img/index/sid_black.png" alt="" />
+                    </div>
+                </li>
+                <li class="sid_code">
+                    <img src="../img/index/sid_code.png" alt="" />
+                    <img class="white" src="../img/index/sid_white.png" alt="" />
+                    <img src="../img/index/top_wx.jpg" alt="" />
+                </li>
+                <div>
+                    反馈意见
+                </div>
+            </div>  
+        </div>
+
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+        <script type="text/javascript" src='../js/details.js'></script>
+    </body>
+</html>

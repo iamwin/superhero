@@ -80,45 +80,91 @@ $(function(){
         location.href='html/lists.html';
     });
     //轮播图
-    var a=0;
-    timeone()
-    function timeone(){
-        clearInterval(timer1)
+    $('.banner').find('img').click(function(){
+        //跳转列表页
+        location.href = 'html/lists.html';
+    });
+    var banner_num=1;
+    clearInterval(timer1);
         var timer1=setInterval(function(){
-            a++
-            if(a>5){
-                a=0;
-            };
-            // console.log(a);
-            $('.banner').find('div').removeClass('ban_act');
-            $('.banner').find('div').eq(a).addClass('ban_act');
-            $('.s_point').find('li').removeClass('actt');
-            $('.s_point').find('li').eq(a).addClass('actt');
-            // console.log($('.banner').find('div')[a]);
-            
-            $('.s_point').on('click','li',function(){
-                // console.log($(this).index());//点击时获取下标
-                a=$(this).index();
-                $('.banner').find('div').removeClass('ban_act');
-                $('.banner').find('div').eq(a).addClass('ban_act');
-                $('.s_point').find('li').removeClass('actt');
-                $('.s_point').find('li').eq(a).addClass('actt');
-            });
-            
-            // $('.banner').mouseenter(function(){
-            //     clearInterval(timer1);
-            //     $('.banner').find('div').removeClass('ban_act');
-            //     $('.banner').find('div').removeClass('ban_acti');
-            //     $('.banner').find('div').eq(a).addClass('ban_acti');
-            // });
-            // $('.banner').mouseleave(function(){
-            //     clearInterval(timer1)
-            //     $('.banner').find('div').removeClass('ban_acti');
-            //     $('.banner').find('div').eq(a).addClass('ban_act');
-            //     timeone();
-            // });
+            banner_num++;
+            if(banner_num>6){
+                banner_num=1;
+            }
+            if(banner_num<1){
+                banner_num=6;
+            }
+            $('.banner').find('img').removeClass('active');
+            $('.banner').find('img').eq(banner_num-1).addClass('active');
+            $('.banner .point').find('li').removeClass('active2');
+            $('.banner .point').find('li').eq(banner_num-1).addClass('active2');
         },5000);
-    };
+    $('.banner').mouseenter(function(){
+        //鼠标进入banner区,轮播图停止
+        clearInterval(timer1);
+    });
+    $('.banner').mouseleave(function(){
+        //鼠标离开banner区，轮播图继续开始
+        clearInterval(timer1);
+        timer1=setInterval(function(){
+            banner_num++;
+            if(banner_num>6){
+                banner_num=1;
+            }
+            if(banner_num<1){
+                banner_num=6;
+            }
+            $('.banner').find('img').removeClass('active');
+            $('.banner').find('img').eq(banner_num-1).addClass('active');
+            $('.banner .point').find('li').removeClass('active2');
+            $('.banner .point').find('li').eq(banner_num-1).addClass('active2');
+        },5000);
+    });
+    $('.point').mouseenter(function(){
+        //鼠标进入banner区,轮播图停止
+        clearInterval(timer1);
+    });
+    $('.point').mouseleave(function(){
+        //鼠标离开banner区，轮播图继续开始
+        clearInterval(timer1);
+        timer1=setInterval(function(){
+            banner_num++;
+            if(banner_num>6){
+                banner_num=1;
+            }
+            if(banner_num<1){
+                banner_num=6;
+            }
+            $('.banner').find('img').removeClass('active');
+            $('.banner').find('img').eq(banner_num-1).addClass('active');
+            $('.banner .point').find('li').removeClass('active2');
+            $('.banner .point').find('li').eq(banner_num-1).addClass('active2');
+        },5000);
+    });
+    var ind;
+    $('.point').on('click','li',function(){
+        clearInterval(timer1);
+        ind = ($(this).index())+1;
+        // console.log(ind);
+        banner_num = ind;
+        $('.banner').find('img').removeClass('active');
+        $('.banner').find('img').eq(banner_num-1).addClass('active');
+        $('.banner .point').find('li').removeClass('active2');
+        $('.banner .point').find('li').eq(banner_num-1).addClass('active2');
+        timer1=setInterval(function(){
+            banner_num++;
+            if(banner_num>6){
+                banner_num=1;
+            }
+            if(banner_num<1){
+                banner_num=6;
+            }
+            $('.banner').find('img').removeClass('active');
+            $('.banner').find('img').eq(banner_num-1).addClass('active');
+            $('.banner .point').find('li').removeClass('active2');
+            $('.banner .point').find('li').eq(banner_num-1).addClass('active2');
+        },5000);
+    })
 
     //购物车数量渲染到购物车中
     var sum_=0; //总数量

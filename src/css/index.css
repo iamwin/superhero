@@ -454,118 +454,57 @@
 
 /*轮播图*/
 .banner{
+    width: 100%;
     height: 480px;
+    overflow: hidden;
     position: relative;
 }
-@keyframes tran{
-    0%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-@keyframes tra{
-    0%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    20%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    40%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    60%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    80%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    94%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-.banner>div{
-    display: none;
+.banner>img{
+    width: 1920px;
+    height: 480px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -860px;
+    opacity: 0;
+    transform: scale(0);
+    z-index: 1;
+    transition: transform 0.5s ease 0s,opacity 1.5s ease 0s;
+    cursor: pointer;
 }
-.banner>a{
-    display: block;
-    z-index: 7;
+.banner>.active{
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+.banner>.point{
+    width: 210px;
+    height: 30px;
     position: absolute;
     bottom: 20px;
-    left: 670px;
+    left: 50%;
+    margin-left: -70px;
+    z-index: 3;
+    cursor: pointer;
 }
-.banner>a>li{
-    display: block;
+.banner>.point>li{
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
     float: left;
-    width: 18px;
-    height: 18px;
-    margin-right: 20px;
-    border: 1px solid #FD7400;
-    border-radius: 9px;
-    background: transparent;
-    z-index: 7;
+    border-radius: 11px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 1px solid #fd7400;
 }
-.banner .actt{/*小圆点*/
-    background: #FD7400;
+.banner>.point>li:nth-child(1){
+    margin: 3px 8px 0 10px;
 }
-.banner div:nth-child(1){
-    width: 100%;
-    height: 480px;
-    background: url(../img/index/banner_one.jpg);
+.banner>.point>.active2{
+    background: #fd7400;
 }
-.banner div:nth-child(2){
-    width: 100%;
-    height: 480px;
-    background: url(../img/index/banner_two.jpg);
-}
-.banner div:nth-child(3){
-    width: 100%;
-    height: 480px;
-    background: url(../img/index/banner_three.jpg);
-}
-.banner div:nth-child(4){
-    width: 100%;
-    height: 480px;
-    background: url(../img/index/banner_four.jpg);
-}
-.banner div:nth-child(5){
-    width: 100%;
-    height: 480px;
-    background: url(../img/index/banner_five.png);
-}
-.banner div:nth-child(6){
-    width: 100%;
-    height: 480px;
-    background: url(../img/index/banner_six.jpg);
-}
-.banner .ban_act{
-    display: block;
-    -webkit-animation-name: tra;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 5s;
-}
-.banner .ban_acti{
-    display: block;
-    -webkit-animation-name: tran;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 5s;
-}
+
 /*广告*/
 .adv{
     height: 380px;
